@@ -2,35 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style type="text/css">
-		
 		body {
 			font-family: cursive;
 			width: 80%;
-			margin: 0 auto;
+			margin:0 auto;
+			font-size: 50px;
 			background-color: #d3d3d3;
-			
 		}
 
 		nav {
 			font-size: 25px;
+			text-align: center;
+			/*margin: 0 auto;*/
+			padding: 0 30%;
+			
 		}
 
-		header {
-			margin:0 auto;
-			width: 100%;
-
+		legend {
+			font-size: 30px;
+			background-color: white;
+			border: 2px solid green;
+			padding: 5px;
+			text-align: center;
+			width: 35%;
 		}
 		footer {
 			background-color: green;
-			color: white;
-			padding: 30px;
-			
-			margin:0 auto;
-			margin-top: 50px;
+			color:white;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px; 
+			margin-bottom: 0 auto;
+			font-size: 15px;
+		}
+
+		fieldset.howto-border {
+			border: 2px groove green;
+			width:70%; 
+		    padding:0 9px;
+		    margin: 120px;
+		    background-color: white;
+		    font-size: 24px;
+		    padding-bottom: 10px;
+		    margin-top: 40px;
+		    margin-bottom: 40px;
+
+			}	
+		legend.howto-border {
+			text-align: left;
+		}
+		h1 {
+			font-size: 40px;
+			text-decoration: none;
+			font-color: white;
+		}
+
+		img {
+			border:2px solid green;
 		}
 
 		.jumbotron a {
@@ -39,78 +72,86 @@
 
 		}
 
-		
-		#howTo {
-			border: 2px solid black;
-			margin: 10px 20px;
-		}
-		.head {
-			text-align: center;
+
+		.jumbotron {
 			background-color: green;
-			
 			color: white;
-			padding: 40px;
-			font-size: 50px;
-			margin:0 auto;
-
-		}
-
-		#footPara {
 			text-align: center;
+			margin: 0 auto;
 		}
-
-		.butt {
-			width: 40%;
-			
-			margin: 20px; auto;
-			font-size: 50px;
-			color: white;
-			border:2px solid black;
-		}
-		.nav {
-			margin: 0px auto;
-		}
-		.container {
-			width: 80%;
-		}
-		#image {
-			margin: 10px;
+		.navbar {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px; 
 		}
 		.nav>li {
-			
-			margin-left: 130px;
+			margin-left: 30px;
 		}
+
+		.howImg {
+			border:2px solid red;
+		}
+
 		
-		.jumbotron {
-			text-align: center;
-			background-color: green;
-			color: white;
-			margin-bottom:0;
+
+		.container {
+			font-size: 25px;
+		}
+		.container.row {
+			margin: 30px 0;
 		}
 
 		.buttons {
-			border: 2px solid red;
+			text-align: center;
+			width: 90%;
+			margin: 0%;
+			
 		}
-	</style>
 
+		.buts {
+			width: 50%;
+			font-size: 50px;
+			margin: 35px auto;
+			border:2px solid green;
+			
+			
+			padding: 10px;
+	
+		}
+
+		.log {
+			float: right;
+			border: 2px solid green;
+			background-color: green;
+			color:white;
+			margin-right: 76px;
+
+		}
+		#but1 {
+			margin-bottom: 60px;
+		}
+
+		#but2 {
+			margin-top: 60px;
+		}
+
+	</style>
 </head>
 <body>
-	<header>
-		
+	<header>	
 		<div class="jumbotron">
-			<h1><a href="logged-in-home.html">fantasy-5-aside</a></h1>
-				
+			<div class="container">
+				<a href="index.html"><h1>fantasy-5-aside</h1></a>
 				<p>Where goals are all that matters!!!</p>
 
 			</div>
 		</div>
-		
+
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-just">
 					<li><a href="logged-in-home.html">Home</a></li>
 					<li><a href="profile.html">Profile</a></li>
-					<li><a href="leaderboard.html">Game</a></li>
+					<li><a href="leaderboard.html">Leaderboard</a></li>
 				</ul>
 			</div>	
 		</nav>
@@ -118,39 +159,41 @@
 
 	<div class="container">
 		<div>
-			<button>Log Out</button>
+			<a href="index.html" type="submit" class="btn btn-default log">Log Out</a>
 		</div>
 
-		<div class="row">
-			<div id="howTo" class="col-md-6">
-				<h3>How to play</h3>
-				<ul>
-					<li>Register and select your team</li>
-					<li>Change your Team Depending on your the upcoming fixtures</li>
-					<li>Watch your team rise up the leaderboard</li>
-				</ul>
-			</div class="col-md-6">
+		<div class="row " >
+			<div class="col-md-12" class="howImg">
+				<form>
+					<fieldset class="howto-border">
+						<legend>How to Play!!</legend>
+						<ul>
+							<li>Register and select your team</li>
+							<li>Change your Team Depending on your the upcoming fixtures</li>
+							<li>Watch your team rise up the leaderboard</li>
+						</ul>
+					</fieldset>
+				</form>	
+			</div>
 			
-			<div id="image">
-				<img src="img/ball-in-net.jpeg">
+		</div>
+		 
+			<div class="row buttons">
+				<div class="col-md-12">	
+					<a href="register.html" type="submit" class="btn btn-default buts" id="but2">Register</a>
+				</div>	
+				<div class="col-md-12">	
+					<a href="log-in.html" type="submit" class="btn btn-default buts" id="but1">Log In</a>
+				</div>
 			</div>
-		</div>	
+			
 
-		<div>
-			<div class="row" class="buttons">
-				<button type="submit" class="btn btn-default butt btn-lg"><a href="log-in.html"> Log In</a></button>
-			</div>
 
-			<div class="row" class="buttons">
-				<button type="submit" class="btn btn-default butt btn-lg"><a href="register.html"> Register</button>
-			</div>
-		</div>	
 	</div>
 
 	<footer>
-		<p id="footPara">Copyright @ Hughbert Int. 2016 </br>All right reserved</p>
+		<p id="footPara">Copyright @ Hughbert Inc. 2016 </br>All right reserved</p>
 	</footer>
 </body>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="'http//code.jquery.co/jquery.min.js"</script>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 </html>

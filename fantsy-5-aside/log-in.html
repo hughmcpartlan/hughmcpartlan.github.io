@@ -19,6 +19,26 @@
 			
 			padding: 0 30%;
 		}
+		fieldset {
+			border: 2px groove green;
+			width:70%; 
+		    padding:0 9px;
+		    margin: 120px;
+		    background-color: white;
+		    font-size: 24px;
+		    padding-bottom: 10px;
+		    margin-top: 40px;
+		    margin-bottom: 40px;
+
+			}	
+		legend {
+			font-size: 30px;
+			background-color: white;
+			border: 2px solid green;
+			padding: 5px;
+			text-align: center;
+			width: 35%;
+		}
 
 		footer {
 			background-color: green;
@@ -55,6 +75,15 @@
 		.field {
 			padding: 20px 0px;
 		}
+		.log {
+			;
+			border: 2px solid green;
+			background-color: green;
+			color:white;
+			font-size: 20px;
+		
+
+		}
 	</style>
 
 </head>
@@ -81,17 +110,20 @@
 
 	<div class="container inputs">
 		<form>
-			<div class="field">
-				<label>Username</label></br>
-				<input type="text" name="user" required>
-			</div>
-			<div class="field">
-				<label>Password</label></br>
-				<input type="password" name="uswer_password" required>
-			</div>
-			<div class="field">
-				<button type="submit">Proceed</button>
-			</div>	
+			<fieldset>
+				<legend>Log In</legend>
+				<div class="field">
+					<label>Username</label></br>
+					<input type="text" name="user" required>
+				</div>
+				<div class="field">
+					<label>Password</label></br>
+					<input type="password" name="uswer_password" required>
+				</div>
+				<div class="field">
+					<a href="profile.html" class="btn btn-default log" type="submit">Proceed</a>
+				</div>
+			</fieldset>		
 		</form>
 	</div>
 

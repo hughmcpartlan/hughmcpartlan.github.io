@@ -2,92 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
-	<title>Profile</title>
+	<title>template</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style type="text/css">
-		
 		body {
 			font-family: cursive;
 			width: 80%;
-			margin: 0 auto;
-			background-color: #d3d3d3;
+			margin:0 auto;
+
 		}
 
 		nav {
 			font-size: 25px;
+			text-align: center;
+			
+			padding: 0 30%;
 		}
 
-		header {
-			margin:0 auto;
-			width: 100%;
-
-		}
 		footer {
 			background-color: green;
-			color: white;
-			padding: 30px;
-			
-			margin:0 auto;
-			margin-top: 50px;
+			color:white;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 
-		
-		#howTo {
-			border: 2px solid black;
-			margin: 10px 20px;
-		}
-		.head {
-			text-align: center;
+		.jumbotron {
 			background-color: green;
-			
 			color: white;
-			padding: 40px;
-			font-size: 50px;
-			margin:0 auto;
-
-		}
-
-		#footPara {
 			text-align: center;
+			margin: 0 auto;
 		}
-
-		.butt {
-			width: 40%;
-			
-			margin: 20px; auto;
-			font-size: 50px;
-			color: white;
-		}
-		.nav {
-			margin: 0px auto;
-		}
-		.container {
-			width: 80%;
-		}
-		#image {
-			margin: 10px;
+		.navbar {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px; 
 		}
 		.nav>li {
-			
-			margin-left: 130px;
-		}
-
+			margin-left: 30px;
 	</style>
-
 </head>
 <body>
-	<header>
-		
-		<div class="head">
-			<h1><a href="logged-in-home.html">fantasy-5-aside</a></h1>
-			<h2>Where goals are all that matters!!!</h2>
+	<header>	
+		<div class="jumbotron">
+			<div class="container">
+				<h1>fantasy-5-aside</h1>
+				<p>Where goals are all that matters!!!</p>
+
+			</div>
 		</div>
-		
+
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-just">
-					<li><a href="logged-in-home.html">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="profile.html">Profile</a></li>
 					<li><a href="leaderboard.html">Game</a></li>
 				</ul>
@@ -95,16 +62,8 @@
 		</nav>
 	</header>
 
-	<div class="container">
-		<div>
-			<button>Log Out</button>
-		</div>
-	</div>
-
 	<footer>
 		<p id="footPara">Copyright @ Hughbert Int. 2016 </br>All right reserved</p>
 	</footer>
 </body>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="'http//code.jquery.co/jquery.min.js"</script>
 </html>

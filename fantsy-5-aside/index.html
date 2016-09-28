@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		body {
+			font-family: cursive;
+			width: 80%;
+			margin:0 auto;
+			font-size: 50px;
+			background-color: grey;
+		}
+
+		nav {
+			font-size: 25px;
+			text-align: center;
+			/*margin: 0 auto;*/
+			padding: 0 30%;
+			
+		}
+
+		legend {
+			font-size: 30px;
+			background-color: white;
+			border: 2px solid green;
+			padding: 5px;
+		}
+		footer {
+			background-color: green;
+			color:white;
+			text-align: center;
+			padding-top: 40px;
+			padding-bottom: 30px;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px; 
+			margin-bottom: 0 auto;
+			font-size: 15px;
+		}
+
+		fieldset.howto-border {
+			border: 2px groove black;
+			width:inherit; 
+		    padding:0 10px;
+		    border-bottom:none;
+		    background-color: white;
+		    padding:;
+
+
+			}	
+		legend.howto-border {
+			text-align: right;
+		}
+		
+
+		.jumbotron {
+			background-color: green;
+			color: white;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.navbar {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px; 
+		}
+		.nav>li {
+			margin-left: 30px;
+		}
+
+		.howImg {
+			border:2px solid red;
+		}
+
+		.container {
+			font-size: 25px;
+		}
+		.container.row {
+			margin: 30px 0;
+		}
+
+		.buttons {
+			text-align: center;
+			width: 90%;
+			margin: 0%;
+		}
+
+		.buts {
+			width: 50%;
+			font-size: 120%;
+			margin: 35px auto;
+			border:2px solid green;
+			margin-bottom: 60px;
+	
+		}
+		#but1 {
+			margin-bottom: 60px;
+		}
+
+	</style>
+</head>
+<body>
+	<header>	
+		<div class="jumbotron">
+			<div class="container">
+				<h1>fantasy-5-aside</h1>
+				<p>Where goals are all that matters!!!</p>
+
+			</div>
+		</div>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<ul class="nav navbar-nav navbar-just">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="profile.html">Profile</a></li>
+					<li><a href="leaderboard.html">Leadrerboard</a></li>
+				</ul>
+			</div>	
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="row " >
+			<div class="col-md-6" class="howImg">
+				<form>
+					<fieldset class="howto-border">
+						<legend>How to Play!!</legend>
+						<ul>
+							<li>Register and select your team</li>
+							<li>Change your Team Depending on your the upcoming fixtures</li>
+							<li>Watch your team rise up the leaderboard</li>
+						</ul>
+					</fieldset>
+				</form>	
+			</div>
+			<div class="col-md-6">
+				
+				
+
+			</div>
+		</div>
+		 
+			<div class="row buttons">
+				<div class="col-md-12">	
+					<button type="submit" class="btn btn-default buts">Register</button>
+				</div>	
+				<div class="col-md-12">	
+					<button type="submit" class="btn btn-default buts" id="but1">Log In</button>
+				</div>
+			</div>
+			
+
+
+	</div>
+
+	<footer>
+		<p id="footPara">Copyright @ Hughbert Inc. 2016 </br>All right reserved</p>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+</html>

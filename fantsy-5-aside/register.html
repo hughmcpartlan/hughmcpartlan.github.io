@@ -2,106 +2,104 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
-	<title>Register</title>
+	<title>register2</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<style type="text/css">
-		
 		body {
 			font-family: cursive;
 			width: 80%;
-			margin: 0 auto;
-			
+			margin:0 auto;
+			background-color: #d3d3d3;
+
 		}
 
 		nav {
 			font-size: 25px;
+			text-align: center;
+			
+			padding: 0 30%;
 		}
 
-		header {
-			margin:0 auto;
-			width: 100%;
-
-		}
 		footer {
 			background-color: green;
-			color: white;
-			padding: 30px;
-			
-			margin:0 auto;
-			margin-top: 50px;
+			color:white;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 
 		fieldset {
-			border-width: 2px solid black;
-		}
-		
-		.head {
 			text-align: center;
-			background-color: green;
-			
+			width: 80%;
+			margin: 50px auto; 
+			font-size: 20px;
+			padding: 0 20%;
+		}
+		.jumbotron a {
+			text-decoration: none;
 			color: white;
-			padding: 40px;
-			font-size: 50px;
-			margin:0 auto;
 
 		}
 
-		#footPara {
+		.jumbotron {
+			background-color: green;
+			color: white;
 			text-align: center;
+			margin: 0 auto;
 		}
-
-		
-		.nav {
-			margin: 0px auto;
-		
+		.navbar {
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px; 
 		}
 		.nav>li {
-			
-			margin-left: 130px;
-		}
-
+			margin-left: 30px;
 	</style>
-
 </head>
 <body>
-	<header>
-		
-		<div class="head">
-			<h1><a href="index.html">fantasy-5-aside</a></h1>
-			<h2>Where goals are all that matters!!!</h2>
+	<header>	
+		<div class="jumbotron">
+			<div class="container">
+				<a href="index.html"><h1>fantasy-5-aside</h1></a>
+				<p>Where goals are all that matters!!!</p>
+
+			</div>
 		</div>
-		
+
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-just">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="profile.html">Profile</a></li>
-					<li><a href="leaderboard.html">Game</a></li>
+					<li><a href="offside.html">Profile</a></li>
+					<li><a href="offside.html">Game</a></li>
 				</ul>
 			</div>	
 		</nav>
 	</header>
 
 	<div class="container">
-		<fieldset>
-			<legend>Basic Details</legend>
-			<div>
-				<label>Name</label>
-				<input type="text" name="name" placeholder="John Smith" required>
-			</div>
-			<div>
-				<label>email</label>
-				<input type="user" name="email" placeholder="johnsmith@email.com" required>
-			</div>
-			<div>	
-				<label>DOB</label>
-				<input type="date" name="date" placeholder="dd/mm/yyyy" required>
-			</div>
-			<div>
-				<button type="submit">Proceed</button>
-			</div>
-		</fieldset>	
+		<form>
+			<fieldset>
+				<legend>Basic Details</legend>
+				<div>
+					<label>Name</label>
+					<input type="text" name="name" placeholder="John Smith" required>
+				</div>
+				</br>
+				<div>
+					<label>email</label>
+					<input type="user" name="email" placeholder="johnsmith@email.com" required>
+				</div>
+				</br>
+				<div>	
+					<label>DOB</label>
+					<input type="date" name="date" placeholder="dd/mm/yyyy" required>
+				</div>
+				</br>
+				<div>
+					<button type="submit">Proceed</button>
+				</div>
+			</fieldset>	
+		</form>	
 	</div>
 
 	<div class="container">
@@ -111,23 +109,29 @@
 				<label>Team Name</label>
 				<input type="text" name="name"  required>
 			</div>
+			</br>
 			<div>
 				<label>Username</label>
 				<input type="user" name="email"  required>
 			</div>
+			</br>
 			<div>	
 				<label>Password</label>
-				<input type="date" name="date"  required>
+				<input type="password" name="password"  required>
 			</div>
+			</br>
 			<div>
 				<button type="submit">Proceed</button>
 			</div>
 		</fieldset>	
 	</div>
+
+	<div>
+		<option></option>
+	</div>
+
 	<footer>
 		<p id="footPara">Copyright @ Hughbert Int. 2016 </br>All right reserved</p>
 	</footer>
 </body>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="'http//code.jquery.co/jquery.min.js"</script>
 </html>

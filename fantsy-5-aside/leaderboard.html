@@ -8,7 +8,7 @@
 		body {
 			font-family: cursive;
 			width: 80%;
-			margin:0 auto;
+			
 			background-color: #d3d3d3;
 
 		}
@@ -32,10 +32,18 @@
 		table {
 			margin:30px auto;			
 			width: 50%;
-			/*border: 2px solid red;*/
 			font-size: 18px
-			
+			background-color: green;
 			}
+		.jumbotron a {
+			text-decoration: none;
+			color: white;
+
+		}	
+		.jumbotron p {
+			color: white;
+		
+		}
 		.jumbotron {
 			background-color: green;
 			color: white;
@@ -49,13 +57,17 @@
 		.nav>li {
 			margin-left: 30px;
 		}
+		.navbar-nav {
+			margin-right: -50px;
+			margin-left: -50px;
+		}
 	</style>
 </head>
 <body>
 	<header>	
 		<div class="jumbotron">
 			<div class="container">
-				<h1>fantasy-5-aside</h1>
+				<a href="logged-in-home.html"><h1>fantasy-5-aside</h1></a>
 				<p>Where goals are all that matters!!!</p>
 
 			</div>
@@ -64,7 +76,7 @@
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-just">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="logged-in-home.html">Home</a></li>
 					<li><a href="profile.html">Profile</a></li>
 					<li><a href="leaderboard.html">Game</a></li>
 				</ul>

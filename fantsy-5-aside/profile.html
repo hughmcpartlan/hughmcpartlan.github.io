@@ -62,6 +62,13 @@
 			color: #999;
 		}
 
+		p {
+			color: white;
+		}
+		h3 {
+			color: black
+		}
+
 		.button {
 			font-size: 25px;
 			align-items: center;
@@ -101,7 +108,7 @@
 		.pickTeam {
 			background-color: green;
 		}
-		.myPro { 
+		fieldset { 
 			background-color: green;
 		}
 
@@ -117,6 +124,8 @@
 			text-align: center;
 			margin-bottom: 60px;
 
+
+
 		}
 		#striker {
 			text-align: center;
@@ -128,7 +137,18 @@
 			color: white;
 
 		}
+		#button1 {
+			margin-top: 30px;
+		}
+
+	
+		
+		.pickTeam #defender, #midfielder, #striker p {
+   			font-size: 25px;
+		
+		}
 	</style>
+
 </head>
 <body>
 	<header>	
@@ -185,96 +205,140 @@
 		</table>
   
 	</fieldset>
-	<style>
-		.pickTeam #defender  p {
-			font-size: 50px;
-		}
-	</style>
+	
 	<form>
 		<fieldset class="pickTeam">	
 			<legend>My Team</legend>
-			<p><a href="#">Change my team</a></p>
+			<div>
+				<button type="submit" class="btn btn-default button" id="button1">Make Changes</button>
+			</div>
 			<div id="defender">
 				<h3>Defender</h3>
 				<p>Chris Smalling</p>
-				<!-- <select>
-					<option value="">Select Defender</option>
-					<option value="Terry">John Terry</option>
-					<option value="Smalling">Chris Smalling</option>
-					<option value="Mertesacker">Per Mertesacker</option>
-					<option value="Huth">Robert Huth</option>
-					<option value="Stones">John Stones</option>
-					<option value="Moreno">Alberto Moreno</option>
-					<option value="Walker">Kyle Walker</option>
-					<option value="Willaims">Ashley Williams</option>
-
-				</select> -->
+		
 			</div>	
 			<div  id="midfielder">
-				<h3>Midfielder</h3>
-				<p>Chris Smalling</p>
-				<!-- <select>
-					<option value="">Select Midfielder</option>
-					<option value="Pogba">Paul Pogba</option>
-					<option value="Wilshere">Jack Wilshere</option>
-					<option value="Cazorla">Santi Cazorla</option>
-					<option value="Silva">David Silva</option>
-					<option value="Firmino">Roberto Firmino</option>
-					<option value="Mahrez">Riyad Mahrez</option>
-					<option value="McCarthy">James McCarthy</option>
-					<option value="Hendrick">Jeff Hendrick</option>
+				<h3>Midfielders</h3>
+				<p>Paul Pogba</p>
+				<p>Riyad Mahrez</p>
 
-				</select> -->
-				
-
-				<select>
-					<option value="">Select Midfielder</option>
-					<option value="Pogba">Paul Pogba</option>
-					<option value="Wilshere">Jack Wilshere</option>
-					<option value="Cazorla">Santi Cazorla</option>
-					<option value="Silva">David Silva</option>
-					<option value="Firmino">Roberto Firmino</option>
-					<option value="Mahrez">Riyad Mahrez</option>
-					<option value="McCarthy">James McCarthy</option>
-					<option value="Hendrick">Jeff Hendrick</option>
-
-				</select>
 			</div>	
 			<div id="striker">
 				<h3>Striker</h3>
-				<select>
-					<option value="">Select Striker</option>
-					<option value="Ibrahimovic">Zlatan Ibrahimovic</option>
-					<option value="Sanchez">Alexis Sanchez</option>
-					<option value="Costa">Diego Costa</option>
-					<option value="Vardy">Jamie Vardy</option>
-					<option value="Benteke">Christian Benteke</option>
-					<option value="Aguero">Sergio Arguero</option>
-					<option value="Deeney">Troy Deeney</option>
-					<option value="Long">Shane Long</option>
+				<p>Zlatan Ibrahimovic</p>
+				<p>Jamie Vardy</p>
 
-				</select>
-				
-				<select>
-					<option value="">Select Striker</option>
-					<option value="Ibrahimovic">Zlatan Ibrahimovic</option>
-					<option value="Sanchez">Alexis Sanchez</option>
-					<option value="Costa">Diego Costa</option>
-					<option value="Vardy">Jamie Vardy</option>
-					<option value="Benteke">Christian Benteke</option>
-					<option value="Aguero">Sergio Arguero</option>
-					<option value="Deeney">Troy Deeney</option>
-					<option value="Long">Shane Long</option>
-				</select>
-			</div>	
+		</fieldset>
+	</form>	
+	<fieldset class="pickMyTeam">	
+		<legend>Pick My Team</legend>
+		
+
+			<div class="teamPick">
+				<div id="defender">
+					<h3>Defender</h3>
+					<select>
+						<option value="Smalling">Chris Smalling</option>
+						<option value="Terry">John Terry</option>
+						<option value="Mertesacker">Per Mertesacker</option>
+						<option value="Huth">Robert Huth</option>
+						<option value="Stones">John Stones</option>
+						<option value="Moreno">Alberto Moreno</option>
+						<option value="Walker">Kyle Walker</option>
+						<option value="Willaims">Ashley Williams</option>
+
+					</select>
+				</div>	
+				<div  id="midfielder">
+					<h3>Midfielder</h3>
+					<select>
+						<option value="Pogba">Paul Pogba</option>
+						<option value="Wilshere">Jack Wilshere</option>
+						<option value="Cazorla">Santi Cazorla</option>
+						<option value="Silva">David Silva</option>
+						<option value="Firmino">Roberto Firmino</option>
+						<option value="Mahrez">Riyad Mahrez</option>
+						<option value="McCarthy">James McCarthy</option>
+						<option value="Hendrick">Jeff Hendrick</option>
+
+					</select>
+
+					
+					<select>
+						<option value="Mahrez">Riyad Mahrez</option>
+						<option value="Wilshere">Jack Wilshere</option>
+						<option value="Cazorla">Santi Cazorla</option>
+						<option value="Silva">David Silva</option>
+						<option value="Firmino">Roberto Firmino</option>
+						<option value="Mahrez">Riyad Mahrez</option>
+						<option value="McCarthy">James McCarthy</option>
+						<option value="Hendrick">Jeff Hendrick</option>
+
+					</select>
+				</div>	
+				<div id="striker">
+					<h3>Striker</h3>
+					<select>
+						<option value="Ibrahimovic">Zlatan Ibrahimovic</option>
+						<option value="Sanchez">Alexis Sanchez</option>
+						<option value="Costa">Diego Costa</option>
+						<option value="Vardy">Jamie Vardy</option>
+						<option value="Benteke">Christian Benteke</option>
+						<option value="Aguero">Sergio Arguero</option>
+						<option value="Deeney">Troy Deeney</option>
+						<option value="Long">Shane Long</option>
+
+					</select>
+
+					<select>
+						<option value="Vardy">Jamie Vardy</option>
+						<option value="Sanchez">Alexis Sanchez</option>
+						<option value="Costa">Diego Costa</option>
+						
+						<option value="Benteke">Christian Benteke</option>
+						<option value="Aguero">Sergio Arguero</option>
+						<option value="Deeney">Troy Deeney</option>
+						<option value="Long">Shane Long</option>
+					</select>
+				</div>	
+			</div>
+
 			<div>
-				<button type="submit" class="btn btn-default button" id="button1">Confirm Team</button>
+				<a href="profile.html" class="btn btn-default button" id="button2">Confirm Team</a>
 			</div>
 			
 
 
 		</fieldset>
+
+		<form>
+		<fieldset class="newTeam">	
+			<legend>My Team</legend>
+			<div>
+				<button type="submit" class="btn btn-default button" id="button3">Make Changes</button>
+			</div>
+			<div id="defender">
+				<h3>Defender</h3>
+				<p>John Terry</p>
+		
+			</div>	
+			<div  id="midfielder">
+				<h3>Midfielders</h3>
+				<p>Jack Wilshere</p>
+				<p>Santi Cazorla</p>
+
+			</div>	
+			<div id="striker">
+				<h3>Striker</h3>
+				<p>Alexis Sanchez</p>
+				<p>Diego Costa</p>
+			</div>
+				
+
+		</fieldset>
 	</form>	
+
+
 
 
 	<footer>
@@ -284,32 +348,25 @@
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 	
-/*	$( document ).ready(function() {
-		$('#gameDetails').hide();
-		$('#pickTeam').hide();
+$( document ).ready(function() {
+    $('.pickMyTeam').hide();
+    $('.newTeam').hide();
+    
 
-		$('#button1').on('click', function(){
-			event.preventDefault();
-			$('#basicDetails').hide();
-			$('#gameDetails').show();
-		});
-		$('#button2').on('click', function(){
-			event.preventDefault();
-			$('#gameDetails').hide();
-			$('#pickTeam').show();
-		});
+    $('#button1').on('click', function(){
+    	event.preventDefault();
+    	$('.pickTeam').hide();
+    	$('.pickMyTeam').show();
+    });
+     $('#button2').on('click', function(){
+    	event.preventDefault();
+    	$('.pickMyTeam').hide();
+    	$('.newTeam').show();
+    });
+
+     
 
 
-
-
-	});//
-
-*/	$( document ).ready(function(){
-		$('#button1').on('click', function(){
-			event.preventDefault();
-			$( "#button1" ).replaceWith( "<button type="submit" class="btn btn-inverse button" id="button1">Team Confirmed</button>" );
-
-		});
-	});	
-
+});
 </script>
+</html>

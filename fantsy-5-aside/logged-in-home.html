@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: cursive;
+			font-family: 'Roboto', sans-serif;
 			width: 80%;
 			margin:0 auto;
 			font-size: 50px;
@@ -41,7 +42,7 @@
 			font-size: 15px;
 		}
 
-		fieldset.howto-border {
+		fieldset {
 			border: 2px groove green;
 			width:70%; 
 		    padding:0 9px;
@@ -65,6 +66,10 @@
 		img {
 			border:2px solid green;
 		}
+		ul {
+			margin-bottom: 40px; 
+			
+		}
 
 		.jumbotron a {
 			text-decoration: none;
@@ -79,6 +84,14 @@
 			text-align: center;
 			margin: 0 auto;
 		}
+		.jumbotron h1 {
+			font-family: 'Pacifico', cursive;
+			font-size:120px;
+		}
+		.jumbotron p {
+			text-align: right;
+			margin-right: 200px
+		}
 		.navbar {
 			border-top-left-radius: 0px;
 			border-top-right-radius: 0px; 
@@ -87,35 +100,34 @@
 			margin-left: 30px;
 		}
 
-		.howImg {
-			border:2px solid red;
-		}
-
-		
+	
 
 		.container {
 			font-size: 25px;
 		}
-		.container.row {
-			margin: 30px 0;
-		}
+		
 
 		.buttons {
 			text-align: center;
-			width: 90%;
-			margin: 0%;
+		
+			margin: 30px auto;
+			margin-bottom: 0;
+			
 			
 		}
 
 		.buts {
-			width: 50%;
+			width:70%;
 			font-size: 50px;
-			margin: 35px auto;
-			border:2px solid green;
 			
+			border:2px solid black;
+			background-color: green;
 			
-			padding: 10px;
+			color: white;
 	
+		}
+		#but1 {
+			margin-bottom: 60px;
 		}
 
 		.log {
@@ -126,67 +138,66 @@
 			margin-right: 76px;
 
 		}
-		#but1 {
-			margin-bottom: 60px;
-		}
 
-		#but2 {
-			margin-top: 60px;
-		}
-
+	
 	</style>
 </head>
 <body>
 	<header>	
 		<div class="jumbotron">
 			<div class="container">
+				
 				<a href="index.html"><h1>fantasy-5-aside</h1></a>
 				<p>Where goals are all that matters!!!</p>
-
+				
 			</div>
 		</div>
 
 		<nav class="navbar navbar-inverse">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-just">
-					<li><a href="logged-in-home.html">Home</a></li>
-					<li><a href="profile.html">Profile</a></li>
-					<li><a href="leaderboard.html">Leaderboard</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="offside.html">Profile</a></li>
+					<li><a href="offside.html">Leaderboard</a></li>
 				</ul>
 			</div>	
 		</nav>
 	</header>
 
-	<div class="container">
-		<div>
+	<div>
 			<a href="index.html" type="submit" class="btn btn-default log">Log Out</a>
 		</div>
+	<div class="container">
+		
 
-		<div class="row " >
-			<div class="col-md-12" class="howImg">
+		<div>
+			<div>
 				<form>
 					<fieldset class="howto-border">
 						<legend>How to Play!!</legend>
-						<ul>
-							<li>Register and select your team</li>
-							<li>Change your Team Depending on your the upcoming fixtures</li>
-							<li>Watch your team rise up the leaderboard</li>
-						</ul>
+						
+						<div class="row buttons">
+							<div class="col-md-6">	
+								<a href="register.html" type="submit" class="btn btn-default buts" id="but2">Register</a>
+							</div>	
+							<div class="col-md-6">	
+								<a href="log-in.html" type="submit" class="btn btn-default buts" id="but1">Log In</a>
+							</div>
+						</div>
+						<div>
+							<ul>
+								<li>Register and select your team</li>
+								<li>Change your Team Depending on your the upcoming fixtures</li>
+								<li>Watch your team rise up the leaderboard</li>
+							</ul>
+						</div>
 					</fieldset>
 				</form>	
 			</div>
 			
 		</div>
 		 
-			<div class="row buttons">
-				<div class="col-md-12">	
-					<a href="register.html" type="submit" class="btn btn-default buts" id="but2">Register</a>
-				</div>	
-				<div class="col-md-12">	
-					<a href="log-in.html" type="submit" class="btn btn-default buts" id="but1">Log In</a>
-				</div>
-			</div>
-			
+		
 
 
 	</div>

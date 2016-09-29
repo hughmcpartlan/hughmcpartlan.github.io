@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>register2</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: cursive;
+			font-family: 'Roboto', sans-serif;
 			width: 80%;
 			margin:0 auto;
 			background-color: #d3d3d3;
@@ -38,6 +39,7 @@
 		    padding-bottom: 10px;
 		    margin-top: 40px;
 		    margin-bottom: 40px;
+		    text-align: center;
 
 			}		
 		legend {
@@ -60,6 +62,14 @@
 			text-align: center;
 			margin: 0 auto;
 		}
+		.jumbotron h1 {
+			font-family: 'Pacifico', cursive;
+			font-size:120px;
+		}
+		.jumbotron p {
+			text-align: right;
+			margin-right: 140px
+		}
 		.navbar {
 			border-top-left-radius: 0px;
 			border-top-right-radius: 0px; 
@@ -71,6 +81,51 @@
 		.button {
 			text-align: center;
 
+		}
+		.rules {
+			border: 2px solid green;
+			background-color: white;
+
+		}
+
+		h3 {
+			color: white;
+		}
+
+
+		ul {
+			text-align: left;
+		}
+
+		.teamPick {
+			background-color: green;
+		}
+
+		.pickMyTeam {
+			background-color: green;
+		}
+		.button {
+			font-size: 25px;
+			align-items: center;
+			margin: 0 auto;
+		}
+		#defender {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+		#midfielder {
+			text-align: center;
+			margin-bottom: 60px;
+
+		}
+		#striker {
+			text-align: center;
+			margin-bottom: 60px;
+
+		}
+
+		#teamConfirm {
+			font-size: 20px;
 		}
 	</style>
 </head>
@@ -89,13 +144,13 @@
 				<ul class="nav navbar-nav navbar-just">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="offside.html">Profile</a></li>
-					<li><a href="offside.html">Game</a></li>
+					<li><a href="offside.html">Leaderboard</a></li>
 				</ul>
 			</div>	
 		</nav>
 	</header>
 
-	<div class="container">
+	<div class="container" id="basicDetails">
 		<form>
 			<fieldset>
 				<legend>Basic Details</legend>
@@ -115,34 +170,141 @@
 				</div>
 				</br>
 				<div>
-					<button type="submit" class="button">Proceed</button>
+					<button type="submit" class="button" id="button1">Proceed</button>
 				</div>
 			</fieldset>	
 		</form>	
 	</div>
 
-	<div class="container">
+	<div class="container" id="gameDetails">
 		<fieldset>
 			<legend>Game Details</legend>
 			<div>
 				<label>Team Name</label>
 				<input type="text" name="name"  required>
 			</div>
-			</br>
+		</br>
 			<div>
 				<label>Username</label>
 				<input type="user" name="email"  required>
 			</div>
-			</br>
+		</br>
 			<div>	
 				<label>Password</label>
 				<input type="password" name="password"  required>
 			</div>
 			</br>
 			<div>
-				<button type="submit" class="button">Proceed</button>
+				<button type="submit" class="button" id="button2">Proceed</button>
 			</div>
+
 		</fieldset>	
+	</div>
+
+	<div>
+		<option></option>
+	</div>
+
+	<div class="container" id="pickTeam">
+		<form>
+		<fieldset class="pickMyTeam">	
+			<legend>Pick My Team</legend>
+				<div class="rules">
+					<h3>How We Play</h3>
+					<ul>
+						<li>Pick 1 Defender, 2 Midielders and 2 Strikers</li>
+						<li>Goals scored are transalated into points
+							<ul>
+								<li>8 for a Defender</li>
+								<li>4 for a Midfielder</li>
+								<li>2 for a Striker</li>
+							</ul></li>
+						<li>Proceed and keep tabs on your team as they fly up our Leadrerboard</li>
+					</ul>
+				</div>
+
+			<div class="teamPick">
+				<div id="defender">
+					<h3>Defender</h3>
+					<select>
+						<option value="">Select Defender</option>
+						<option value="Terry">John Terry</option>
+						<option value="Smalling">Chris Smalling</option>
+						<option value="Mertesacker">Per Mertesacker</option>
+						<option value="Huth">Robert Huth</option>
+						<option value="Stones">John Stones</option>
+						<option value="Moreno">Alberto Moreno</option>
+						<option value="Walker">Kyle Walker</option>
+						<option value="Willaims">Ashley Williams</option>
+
+					</select>
+				</div>	
+				<div  id="midfielder">
+					<h3>Midfielder</h3>
+					<select>
+						<option value="">Select Midfielder</option>
+						<option value="Pogba">Paul Pogba</option>
+						<option value="Wilshere">Jack Wilshere</option>
+						<option value="Cazorla">Santi Cazorla</option>
+						<option value="Silva">David Silva</option>
+						<option value="Firmino">Roberto Firmino</option>
+						<option value="Mahrez">Riyad Mahrez</option>
+						<option value="McCarthy">James McCarthy</option>
+						<option value="Hendrick">Jeff Hendrick</option>
+
+					</select>
+				
+					
+					<select>
+						<option value="">Select Midfielder</option>
+						<option value="Pogba">Paul Pogba</option>
+						<option value="Wilshere">Jack Wilshere</option>
+						<option value="Cazorla">Santi Cazorla</option>
+						<option value="Silva">David Silva</option>
+						<option value="Firmino">Roberto Firmino</option>
+						<option value="Mahrez">Riyad Mahrez</option>
+						<option value="McCarthy">James McCarthy</option>
+						<option value="Hendrick">Jeff Hendrick</option>
+
+					</select>
+				</div>	
+				<div id="striker">
+					<h3>Striker</h3>
+					<select>
+						<option value="">Select Striker</option>
+						<option value="Ibrahimovic">Zlatan Ibrahimovic</option>
+						<option value="Sanchez">Alexis Sanchez</option>
+						<option value="Costa">Diego Costa</option>
+						<option value="Vardy">Jamie Vardy</option>
+						<option value="Benteke">Christian Benteke</option>
+						<option value="Aguero">Sergio Arguero</option>
+						<option value="Deeney">Troy Deeney</option>
+						<option value="Long">Shane Long</option>
+
+					</select>
+				
+					<select>
+						<option value="">Select Striker</option>
+						<option value="Ibrahimovic">Zlatan Ibrahimovic</option>
+						<option value="Sanchez">Alexis Sanchez</option>
+						<option value="Costa">Diego Costa</option>
+						<option value="Vardy">Jamie Vardy</option>
+						<option value="Benteke">Christian Benteke</option>
+						<option value="Aguero">Sergio Arguero</option>
+						<option value="Deeney">Troy Deeney</option>
+						<option value="Long">Shane Long</option>
+					</select>
+				</div>	
+			</div>
+
+			<div>
+				<a href="profile.html" class="btn btn-default button" id="button3">Confirm Team</a>
+			</div>
+			
+
+	  
+		</fieldset>
+	</form>	
 	</div>
 
 	<div>
@@ -153,4 +315,28 @@
 		<p id="footPara">Copyright @ Hughbert Int. 2016 </br>All right reserved</p>
 	</footer>
 </body>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	
+$( document ).ready(function() {
+    $('#gameDetails').hide();
+    $('#pickTeam').hide();
+
+    $('#button1').on('click', function(){
+    	event.preventDefault();
+    	$('#basicDetails').hide();
+    	$('#gameDetails').show();
+    });
+      $('#button2').on('click', function(){
+    	event.preventDefault();
+    	$('#gameDetails').hide();
+    	$('#pickTeam').show();
+    });
+
+
+
+
+});
+</script>
+
 </html>

@@ -4,11 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Leaderboard</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
 	<style type="text/css">
 		body {
-			font-family: cursive;
+			font-family: 'Roboto', sans-serif;
 			width: 80%;
-			
+			margin:0 auto;
 			background-color: #d3d3d3;
 
 		}
@@ -50,6 +51,14 @@
 			text-align: center;
 			margin: 0 auto;
 		}
+		.jumbotron h1 {
+			font-family: 'Pacifico', cursive;
+			font-size:120px;
+		}
+		.jumbotron p {
+			text-align: right;
+			margin-right: 180px
+		}
 		.navbar {
 			border-top-left-radius: 0px;
 			border-top-right-radius: 0px; 
@@ -60,6 +69,15 @@
 		.navbar-nav {
 			margin-right: -50px;
 			margin-left: -50px;
+		}
+
+		.log {
+			float: right;
+			border: 2px solid green;
+			background-color: green;
+			color:white;
+			margin-right: 76px;
+
 		}
 	</style>
 </head>
@@ -83,6 +101,11 @@
 			</div>	
 		</nav>
 	</header>
+
+		<div>
+			<a href="index.html" type="submit" class="btn btn-default log">Log Out</a>
+		</div>
+
 
 	
 		<table class="table table-striped table-bordered table-hover">

@@ -40,6 +40,7 @@
 		    margin-top: 40px;
 		    margin-bottom: 40px;
 		    text-align: center;
+		    border-radius: 4px;
 
 			}		
 		legend {
@@ -49,6 +50,8 @@
 			padding: 5px;
 			text-align: center;
 			width: 35%;
+			border-radius: 4px;
+
 		}
 		.jumbotron a {
 			text-decoration: none;
@@ -61,6 +64,7 @@
 			color: white;
 			text-align: center;
 			margin: 0 auto;
+
 		}
 		.jumbotron h1 {
 			font-family: 'Pacifico', cursive;
@@ -68,7 +72,7 @@
 		}
 		.jumbotron p {
 			text-align: right;
-			margin-right: 140px
+			margin-right: 200px
 		}
 		.navbar {
 			border-top-left-radius: 0px;
@@ -105,9 +109,12 @@
 			background-color: green;
 		}
 		.button {
-			font-size: 25px;
-			align-items: center;
-			margin: 0 auto;
+			border: 2px solid green;
+			background-color: green;
+			color:white;
+			font-size: 20px;
+			border:2px solid black;
+			border-radius: 4px;
 		}
 		#defender {
 			text-align: center;
@@ -126,6 +133,10 @@
 
 		#teamConfirm {
 			font-size: 20px;
+		}
+		#button3 {
+			background-color: white;
+			color: black;
 		}
 	</style>
 </head>
@@ -306,7 +317,7 @@
 		</fieldset>
 	</form>	
 	</div>
-	
+
 
 	<div>
 		<option></option>
@@ -336,6 +347,43 @@ $( document ).ready(function() {
 
 
 
+
+});
+
+	$("#button1").mouseenter(function(){  
+		$("#button1").css("background-color","black");
+		$("#button1").css("color","green");
+		$("#button1").css("border","2px solid green");
+
+}); 
+	$("#button1").mouseleave(function(){  
+		$("#button1").css("background-color","green");
+		$("#button1").css("color","white");
+		$("#button1").css("border","2px solid black");
+
+});
+	$("#button2").mouseenter(function(){  
+		$("#button2").css("background-color","black");
+		$("#button2").css("color","green");
+		$("#button2").css("border","2px solid green");
+
+}); 
+	$("#button2").mouseleave(function(){  
+		$("#button2").css("background-color","green");
+		$("#button2").css("color","white");
+		$("#button2").css("border","2px solid black");
+
+});
+	$("#button3").mouseenter(function(){  
+		$("#button3").css("background-color","black");
+		$("#button3").css("color","green");
+		$("#button3").css("border","2px solid green");
+
+}); 
+	$("#button3").mouseleave(function(){  
+		$("#button3").css("background-color","white");
+		$("#button3").css("color","black");
+		$("#button3").css("border","2px solid black");
 
 });
 </script>

@@ -55,7 +55,7 @@
 		    margin-top: 40px;
 		    margin-bottom: 40px;
 			border-radius: 4px; 
-		    
+
 
 			}	
 		legend.howto-border {
@@ -211,4 +211,45 @@
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	$("#but1").mouseenter(function(){  
+		$("#but1").css("background-color","black");
+		$("#but1").css("color","green");
+		$("#but1").css("border","2px solid green");
+
+	}); 
+	$("#but1").mouseleave(function(){  
+		$("#but1").css("background-color","green");
+		$("#but1").css("color","white");
+		$("#but1").css("border","2px solid black");
+
+	});  
+ 
+    $("#but2").mouseenter(function(){  
+    	$("#but2").css("background-color","black");
+		$("#but2").css("color","green");
+		$("#but2").css("border","2px solid green");
+
+	}); 
+	$("#but2").mouseleave(function(){  
+		$("#but2").css("background-color","green");
+		$("#but2").css("color","white");
+		$("#but2").css("border","2px solid black");
+
+	});  
+ 	
+ 	$(".log").mouseenter(function(){  
+    	$(".log").css("background-color","black");
+		$(".log").css("color","green");
+		$(".log").css("border","2px solid green");
+
+	}); 
+	$(".log").mouseleave(function(){  
+		$(".log").css("background-color","green");
+		$(".log").css("color","white");
+		$(".log").css("border","2px solid black");
+
+	});  
+ 
+</script>
 </html>

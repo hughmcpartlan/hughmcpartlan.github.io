@@ -73,6 +73,10 @@
 			font-size: 25px;
 			align-items: center;
 			margin: 0 auto;
+			background-color: white;
+			color: black;
+			
+			border: 2px solid black;
 		}
 		.jumbotron {
 			background-color: green;
@@ -98,7 +102,7 @@
 		}
 		.log {
 			float: right;
-			border: 2px solid green;
+			border: 2px solid black;
 			background-color: green;
 			color:white;
 			margin-right: 76px;
@@ -368,5 +372,56 @@ $( document ).ready(function() {
 
 
 });
+
+	$("#button1").mouseenter(function(){  
+		$("#button1").css("background-color","black");
+		$("#button1").css("color","green");
+		$("#button1").css("border","2px solid green");
+
+}); 
+	$("#button1").mouseleave(function(){  
+		$("#button1").css("background-color","white");
+		$("#button1").css("color","black");
+		$("#button1").css("border","2px solid black");
+
+});
+	$("#button2").mouseenter(function(){  
+		$("#button2").css("background-color","black");
+		$("#button2").css("color","green");
+		$("#button2").css("border","2px solid green");
+
+}); 
+	$("#button2").mouseleave(function(){  
+		$("#button2").css("background-color","white");
+		$("#button2").css("color","black");
+		$("#button2").css("border","2px solid black");
+
+});
+	$("#button3").mouseenter(function(){  
+		$("#button3").css("background-color","black");
+		$("#button3").css("color","green");
+		$("#button3").css("border","2px solid green");
+
+}); 
+	$("#button3").mouseleave(function(){  
+		$("#button3").css("background-color","white");
+		$("#button3").css("color","black");
+		$("#button3").css("border","2px solid black");
+
+});
+
+	$(".log").mouseenter(function(){  
+    	$(".log").css("background-color","black");
+		$(".log").css("color","green");
+		$(".log").css("border","2px solid green");
+
+	}); 
+	$(".log").mouseleave(function(){  
+		$(".log").css("background-color","green");
+		$(".log").css("color","white");
+		$(".log").css("border","2px solid black");
+
+	});  
+
 </script>
 </html>

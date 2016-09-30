@@ -90,6 +90,8 @@
 			background-color: green;
 			color:white;
 			font-size: 20px;
+			border:2px solid black;
+
 		
 
 		}
@@ -140,4 +142,23 @@
 		<p id="footPara">Copyright @ Hughbert Int. 2016 </br>All right reserved</p>
 	</footer>
 </body>
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	$(".log").mouseenter(function(){  
+		$(".log").css("background-color","black");
+		$(".log").css("color","green");
+		$(".log").css("border","2px solid green");
+
+	}); 
+	$(".log").mouseleave(function(){  
+		$(".log").css("background-color","green");
+		$(".log").css("color","white");
+		$(".log").css("border","2px solid black");
+
+	});  
+ 
+   
+ 
+ 
+</script>
 </html>
